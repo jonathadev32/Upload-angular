@@ -1,0 +1,192 @@
+.container{
+  display: flex;
+  width: 40rem;
+  height: 30rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  border: none;
+  background: no-repeat url('/assets/papel3.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+
+}
+
+
+
+.card{
+  width: 30rem;
+  background-color: rgb(236, 243, 251);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+img{
+  margin-left: 1rem;
+}
+
+.upload .inputs{
+  position: absolute;
+  width: 3rem;
+  height: 4.5rem;
+  overflow: hidden;
+  top: 0;
+  margin-top: 1.6rem;
+  margin-left: 1rem;
+  opacity: 0;
+
+}
+
+.upload .inputs input[type='file']{
+  position: absolute;
+  transform: scale(4);
+
+}
+.paragrafos{
+  background-color: rgb(222, 237, 255);
+  font-size: 1rem;
+
+
+}
+
+input[type='file']::-webkit-file-upload-button{
+  cursor: pointer;
+  }
+
+.input-button{
+  display: none;
+
+  }
+
+label{
+  cursor: pointer;
+  color: white;
+  height: 2.5rem;
+  width: 13rem;
+  background: linear-gradient(90deg,#008374,#44c8dd);
+  display: flex;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  text-align: center;
+  margin: 0.5em;
+  border-radius: 3em;
+  transition: 0.3s;
+  font-weight: 600;
+
+
+
+
+}
+label:hover{
+  background: linear-gradient(90deg,#00b7a4,#4ee7ff);
+  transition: 0.2s;
+  animation: animate 1s linear infinite;
+}
+
+.list{
+  list-style: none;
+  margin: 1em;
+  font-size: 15px;
+  font-weight: 500;
+
+}
+
+.fa-trash{
+  cursor: pointer;
+}
+
+.upload-button{
+  width: 120px;
+  height: 30px;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 2em;
+  transition: 0.3s;
+  color: white;
+  background: linear-gradient(90deg,#00a090,#34cfe7);
+  font-size: 15px;
+}
+
+.upload-button:hover{
+  background: linear-gradient(90deg,#00b7a4,#4ee7ff);
+  transition: 0.2s;
+  animation: animate 1s linear infinite;
+}
+
+// @media only screen and (max-width: 650px){
+
+//   label{
+//     cursor: pointer;
+//     color: white;
+//     height: 35px;
+//     width: 175px;
+//     background-color: #297789;
+//     display: block;
+//     font-size: 14px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-family: "Montserrat";
+//     text-align: center;
+//     margin: 0.5em;
+//     border-radius: 4em;
+
+//   }
+
+//   .paragrafos{
+//     background-color: rgb(222, 237, 255);
+//     margin-top: 0.5em;
+//     font-size: 14px;
+//   }
+//   .list{
+//     list-style: none;
+//     font-size: 14px;
+//   }
+
+// }
+
+// @media only screen and (max-width: 530px){
+
+//   label{
+//     cursor: pointer;
+//     color: white;
+//     height: 28px;
+//     width: 120px;
+//     background-color: #297789;
+//     display: block;
+//     font-size: 10px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-family: "Montserrat";
+//     text-align: center;
+//     margin: 0.5em;
+//     border-radius: 4em;
+
+//   }
+
+//   .paragrafos{
+//     background-color: rgb(222, 237, 255);
+//     margin-top: 0.5em;
+//     font-size: 11px;
+//   }
+//   .list{
+//     list-style: none;
+//     font-size: 11px;
+//   }
+
+// }
+
+
+
+

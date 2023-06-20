@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="card">
+    <div class="upload">
+      <img
+        class="mt-4"
+        alt="Imagem de Upload"
+        src="https://assets.suamusica.com.br/img/mobile/sprite-upload/img-upload.png"
+        decoding="async"
+        data-nimg="intrinsic"
+      />
+      <div class="p-1 inputs">
+        <input
+          (change)="getFile($event)"
+          class="uppy-FileInput-input form-control"
+          type="file"
+          multiple
+          accept="image/*, audio/*"
+        />
+      </div>
+    </div>
+    <div class="styles_allowedFilesArea__XKLF9" *ngIf="!file">
+      <input
+        (change)="getFile($event)"
+        class="input-button"
+        type="file"
+        id="upload-button"
+        multiple
+        accept="image/* , audio/*"
+      />
+      <label for="upload-button">
+        <i class="fa-solid fa-upload"></i>&nbsp; Selecionar Arquivo</label
+      >
+    </div>
+    <div id="error"></div>
+    <div *ngIf="file">
+      <li
+        class="list"
+        type="text"
+        *ngFor="
+          let item of list | slice: (list.length > 1 ? list.length - 1 : 0)
+        ">
+        {{ item.nome
+        }}<i
+          style="color: red"
+          class="fa-solid fa-trash mx-2"
+          (click)="file = undefined"
+        ></i>
+      </li>
+      <button class="upload-button" (click)="onUpload(file)">Upload</button>
+    </div>
+    <div class="paragrafos">
+      <p class="styles_text__6iqWE m-2">
+        <b>Arquivos permitidos</b>: Áudio (mp3, ogg e m4a).
+        <span
+          >Também são permitidos os arquivos de áudio comprimidos em um arquivo
+          <b>.zip ou .rar</b></span
+        >.
+      </p>
+      <p class="styles_text__6iqWE"><b>Tamanho máximo do CD:</b> 250 MB.</p>
+    </div>
+  </div>
+</div>
